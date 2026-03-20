@@ -1,0 +1,43 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "Finding",
+  "type": "object",
+  "required": [
+    "id",
+    "type",
+    "severity",
+    "blocking",
+    "summary",
+    "recommendation",
+    "location"
+  ],
+  "properties": {
+    "id": { "type": "string" },
+    "type": { "type": "string", "description": "High-level finding type/class." },
+    "severity": {
+      "type": "string",
+      "enum": ["critical", "major", "minor", "informational"]
+    },
+    "blocking": { "type": "boolean" },
+    "summary": { "type": "string" },
+    "description": { "type": "string" },
+    "recommendation": { "type": "string" },
+    "location": {
+      "type": "object",
+      "required": ["section_title"],
+      "properties": {
+        "section_title": { "type": "string" },
+        "text_quote": { "type": "string" }
+      },
+      "additionalProperties": true
+    },
+    "evidence": {
+      "type": "array",
+      "items": { "type": "object" },
+      "description": "Evidence excerpts and/or references supporting the finding."
+    },
+    "raw": { "type": "object", "description": "Original finding payload from upstream agent." }
+  },
+  "additionalProperties": true
+}
+

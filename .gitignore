@@ -1,0 +1,16 @@
+# Secrets and local env (keep example file tracked)
+.env*
+!.env.example
+
+__pycache__/
+*.py[cod]
+.Python
+.venv/
+venv/
+
+# Editor local history
+.history/
+
+# Demo workspace outputs (committed samples live under memories/input/)
+memories/waypoints/
+memories/out.json

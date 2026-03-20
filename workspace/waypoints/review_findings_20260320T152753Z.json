@@ -1,0 +1,32 @@
+{
+  "generated": "# Test\n\nSample draft with number 42 for review.",
+  "sources": {
+    "texts": [],
+    "num_excerpts": 0
+  },
+  "sections": [
+    {
+      "section_index": 0,
+      "section_title": "Test",
+      "numeric_consistency": {
+        "content": "The section contains a sample draft with the number 42. No authoritative source document was provided, so the review focused on internal consistency and guideline-based checks.",
+        "findings": [],
+        "severity": "informational",
+        "confidence": 1.0,
+        "data_points": [],
+        "numeric_checks": [],
+        "summary": {
+          "total_checks": 0,
+          "strictness": "standard"
+        },
+        "meta": {
+          "skill": "numeric-consistency",
+          "document_type": null,
+          "product_type": null,
+          "lifecycle_stage": null,
+          "evidence_chunks_provided": false
+        }
+      }
+    }
+  ]
+}

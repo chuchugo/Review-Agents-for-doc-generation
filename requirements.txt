@@ -1,0 +1,5 @@
+# Core LLM client for section review (run_context_fidelity_review / numeric-consistency skill)
+openai>=1.40.0
+
+# Load OPENAI_API_KEY from repo-root `.env` in CLI entrypoints
+python-dotenv>=1.0.0

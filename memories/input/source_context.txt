@@ -1,0 +1,4 @@
+Protocol AB-12345 (excerpt)
+Study drug: 10 mg administered intravenously once every 2 weeks (Q2W).
+Planned enrollment: N=120 (60 per arm).
+Primary endpoint: PFS at Week 24.
